@@ -1,0 +1,38 @@
+.cookies * {
+	text-align: left!important;
+}
+
+section {
+	-webkit-box-shadow: none!important;
+	   -moz-box-shadow: none!important;
+	        box-shadow: none!important;
+}
+
+.cookies dl {
+	font-size: 1.15em;
+}
+
+.cookies dt, .cookies dd {
+	display: inline;
+}
+
+.cookies dt {
+	font-family: FuturaStd-Book;
+	font-weight: normal;
+}
+
+.cookies dt:before {
+	content: '• ';
+}
+
+.cookies dl div {
+	margin: 20px 0;
+}
+
+.cookies a {
+	text-decoration: underline!important;
+}
+
+.cookies ul, .cookies li {
+	margin: 0;
+}

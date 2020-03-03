@@ -1,0 +1,11 @@
+#metodo-balance-cat section.full-height {
+	background-image: url('../img/metodo-balance-cat/main.jpg');
+	background-position: center bottom;
+}
+
+#metodo-balance-cat section:nth-child(2) h2 {
+	font-size: 6em;
+	line-height: 1em;
+	position: relative;
+	top: -7px;
+}

@@ -1,0 +1,54 @@
+#D-O-G {
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	z-index: 100;
+}
+
+#D-O-G a {
+	will-change: opacity;
+	-webkit-transition: opacity .2s ease;
+	   -moz-transition: opacity .2s ease;
+	     -o-transition: opacity .2s ease;
+	        transition: opacity .2s ease;
+}
+
+#D-O-G a:hover {
+	opacity: .6;
+}
+
+#D-O-G img {
+	height: 50px;
+}
+
+#gracias #header {
+	color: #fff;
+	height: 357px;
+	background-image: url('../img/descargar/main-gracias.jpg');
+	background-attachment: fixed;
+	background-size: auto;
+	background-position: top left!important;
+	background-repeat: no-repeat;
+	background-color: #000;
+	padding-top: 80px;
+	position: relative;
+	overflow: hidden;
+}
+
+#gracias #header div {
+	position: fixed;
+	width: 100%;
+}
+
+#gracias #header h2 {
+	line-height: 1.25em;
+	font-size: 1.9em;
+}
+
+#gracias #header p {
+	font-size: 1.2em;
+}
+
+#datepicker {
+	display: inline-block;
+}

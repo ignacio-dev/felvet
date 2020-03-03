@@ -1,0 +1,174 @@
+/* Custom Header Color */
+header {
+	background: rgba(255,255,255, .8);
+}
+
+/* Contact Form */
+#contacto {
+	min-height: 100vh;
+	background-image: url('../img/contacto/main.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-attachment: fixed;
+}
+
+form {
+	padding-top: 170px;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	max-width: 500px;
+	min-height: 100%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+form label {
+	margin-bottom: 5px;
+	text-align: left;
+	display: block;
+	text-transform: uppercase;
+	font-family: 'FuturaStd-Book';
+	color: #888;
+	font-size: .8em;
+}
+
+form span {
+	color: #ed2000;
+	font-family: 'FuturaStd-Book';
+}
+
+form input, form textarea, #conditions p {
+	font-family: 'FuturaStd-Light';
+	display: block;
+	margin-bottom: 22px;
+	width: 100%;
+	padding: 5px;
+	border: 1px solid silver;
+	box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .12);
+	border-radius: 2px;
+}
+
+form textarea {
+	resize: vertical;
+	min-height: 200px;
+}
+
+form input:focus, form textarea:focus {
+	outline-color: #96457d;
+}
+
+#conditions {
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+#conditions span.error,
+#validation span.error {
+	text-align: right!important;
+}
+
+#conditions p {
+	padding: 10px;
+	height: 200px;
+	overflow-y: scroll;
+	font-size: .9em;
+	line-height: 1.5em;
+	text-align: left;
+	margin-bottom: 20px;
+	background-color: rgba(255, 255, 255, .4);
+
+	-webkit-user-select: text;
+	   -moz-user-select: text;
+	    -ms-user-select: text;
+	        user-select: text;
+}
+
+#conditions p a {
+	color: blue;
+	text-decoration: underline;
+}
+
+#conditions label {
+	margin: 0;
+	text-align: right;
+	display: inline;
+	line-height: 0;
+}
+
+#conditions input[type=checkbox] {
+	margin: 0;
+	display: inline;
+	width: auto;
+	margin-left: 6px;
+}
+
+.g-recaptcha {
+	float: right;
+	margin-bottom: 19px;
+}
+
+form button {
+	clear: both;
+	margin-left: auto;
+	margin-right: 0;
+	margin-bottom: 100px;
+	display: block;
+	border-color: #999;
+	font-size: .9em;
+}
+
+#contacto img.attachment {
+	position: absolute;
+	bottom: 0;
+	opacity: .85;
+}
+
+/* Errors */
+form    input.error,
+form textarea.error,
+.g-recaptcha.error {
+	-webkit-box-shadow: 0 0 2px 0px rgba(200, 0, 0, .75)!important;
+	   -moz-box-shadow: 0 0 2px 0px rgba(200, 0, 0, .75)!important;
+	        box-shadow: 0 0 2px 0px rgba(200, 0, 0, .75)!important;
+
+	outline-color:          rgba(200, 0, 0, .5)!important;
+	outline-style: solid!important;
+	outline-width: 2px!important;
+	outline-offset: -2px!important;
+}
+
+form span.error {
+	text-align: left;
+	display: block;
+	margin-top: -10px;
+}
+
+#conditions label.error {
+	color: #ed2000;
+}
+
+/* Success Message */
+#success-message {
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	top: 150px;
+	-webkit-transform: translate(-50%, 0);
+	   -moz-transform: translate(-50%, 0);
+	    -ms-transform: translate(-50%, 0);
+	     -o-transform: translate(-50%, 0);
+	        transform: translate(-50%, 0);
+	margin: 0;
+	padding: 160px 80px;
+	border-radius: 20px;
+	white-space: nowrap;
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+	   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+	        box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+}
+
+#success-message p {
+	font-size: 1.2em;
+}

@@ -1,0 +1,18 @@
+#cookie-msg {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, .8);
+	color: #fff;
+	padding: 20px;
+	-webkit-transition: bottom .5s ease;
+	   -moz-transition: bottom .5s ease;
+	     -o-transition: bottom .5s ease;
+	        transition: bottom .5s ease;
+	z-index: 1000;
+}
+
+#cookie-msg.closed {
+	bottom: -100%;
+}

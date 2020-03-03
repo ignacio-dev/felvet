@@ -1,0 +1,183 @@
+#D-O-G {
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	z-index: 100;
+}
+
+#D-O-G a {
+	will-change: opacity;
+	-webkit-transition: opacity .2s ease!important;
+	   -moz-transition: opacity .2s ease!important;
+	     -o-transition: opacity .2s ease!important;
+	        transition: opacity .2s ease!important;
+}
+
+#D-O-G a:hover {
+	opacity: .6;
+}
+
+#D-O-G img {
+	height: 64px;
+}
+
+#descargar #header {
+	color: #fff;
+	height: 357px;
+	background-image: url('../img/descargar/main.jpg');
+	background-attachment: fixed;
+	background-size: auto;
+	background-position: top left!important;
+	background-repeat: no-repeat;
+	background-color: #000;
+
+	padding-top: 80px;
+	position: relative;
+	overflow: hidden;
+}
+
+#descargar #header div {
+	position: fixed;
+	width: 100%;
+}
+
+#descargar #header h2 {
+	line-height: 1.25em;
+	font-size: 1.9em;
+}
+
+#descargar #header p {
+	font-size: 1.2em;
+}
+
+#que-vas-a-aprender .thirds div {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-ms-flex-flow: column;
+	    flex-flow: column;
+
+	-webkit-box-pack: justify;
+	   -ms-flex-pack: justify;
+	 justify-content: space-between;
+}
+
+.vector-cat {
+	height: 75px;
+}
+
+#photo-amaya {
+	max-height: 300px;
+	display: block;
+	margin: 0 auto;
+	margin-top: -100px;
+}
+
+/* Dialog */
+#modal {
+	position: fixed;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-align: center;
+	   -ms-flex-align: center;
+	      align-items: center;
+
+	  -ms-flex-pack: distribute;
+	justify-content: space-around;
+
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, .4);
+	opacity: .2;
+	z-index: 10000;
+	will-change: opacity, visibility;
+	-webkit-transition: opacity .2s ease;
+	   -moz-transition: opacity .2s ease;
+	     -o-transition: opacity .2s ease;
+	        transition: opacity .2s ease;
+}
+
+#modal.closed {
+	visibility: hidden;
+	opacity: 0;
+	
+}
+
+#modal.open {
+	visibility: visible;
+	opacity: 1;
+}
+
+#dialog {
+	font-size: 17px;
+	background: #fff;
+	border-radius: 2px;
+	display: inline-block;
+	width: 50%;
+	padding: 40px 40px 40px 40px;
+	position: relative;
+}
+
+#dialog p {
+	margin-top: 15px;
+}
+
+#dialog form input {
+	font-size: 14px;
+	display: block;
+	padding: 5px;
+	width: 100%;
+}
+
+#dialog form input:focus {
+	outline-color: #96457d;
+}
+
+#dialog form button {
+	font-size: .8em;
+}
+
+#dialog form input,
+#dialog .g-recaptcha {
+	margin-top: 20px;
+}
+
+#dialog form button {
+	margin-top: 12px;
+}
+
+#dialog .g-recaptcha {
+	display: inline-block;
+}
+
+#dialog .g-recaptcha.error {
+	-webkit-box-shadow: 0 0 2px 0px rgba(200, 0, 0, .75)!important;
+	   -moz-box-shadow: 0 0 2px 0px rgba(200, 0, 0, .75)!important;
+	        box-shadow: 0 0 2px 0px rgba(200, 0, 0, .75)!important;
+
+	outline-color: rgba(200, 0, 0, .5)!important;
+	outline-style: solid!important;
+	outline-width:   2px!important;
+	outline-offset: -2px!important;
+}
+
+#dialog #close-btn {
+	position: absolute;
+	top:  15px;
+	left: 17px;
+	will-change: color;
+	-webkit-transition: color .2s ease;
+	   -moz-transition: color .2s ease;
+	     -o-transition: color .2s ease;
+	        transition: color .2s ease;
+	cursor: pointer;
+}
+
+#dialog #close-btn:hover {
+	color: #96457d;
+}
