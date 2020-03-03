@@ -30,7 +30,7 @@ File located inside the _config_ folder in the _app_ folder root. Contains impor
 * __APPROOT__: Shorcut to the _app_ folder.
 * __INCLUDES__: Shortcut to the _includes_ views folder
 * __HELPERS__: Shortcut to the _helpers_ folder.
-* __MAILTO__: Email address to which the contact form will send its the data input.
+* __MAILTO__: Email address to which the contact form will send its data input.
 * __CAPTCHA\_SECRET\_KEY__: Google reCaptcha's secret key.
 * __DB\_HOST__: Host name of the database.
 * __DB\_NAME__: Name of the database.
@@ -46,7 +46,9 @@ File located inside the _config_ folder in the _app_ folder root. Contains impor
 File in charge of parsing URL parameters, calling the right method from a controller and pass extra parameters if desired. If nothing is passed through the URL the Core will call the _Home_ controller by default. If no method is passed through the URL, the _Core_ will call the _Index_ method by default.
 
 Examples:
+
 http://www.felvet.es/descargar/pdf - will call the _Pdf_ method from the _Descargar_ controller.
+
 http://www.felvet.es/contact - will call the _Index_ method from the _Contact_ controller.
 
 
@@ -102,7 +104,7 @@ $data = [
 ```
 ***
 ### Models
-Locades inside the _model_ folder at the _app_ root, different models can provide different methods in order to interact with the database. For this to be possible, a new _Database_ class must be instantiated in the constructor and stored in a variable. All methods from the _Database_ lib will be available to use through this variable.
+Located inside the _model_ folder at the _app_ root. Different models can provide different methods in order to interact with the database. For this to be possible, a new _Database_ class must be instantiated in the constructor and stored in a variable. All methods from the _Database_ lib will be available to use through this variable.
 
 Example:
 
@@ -134,7 +136,7 @@ __Important:__ The contents inside a view file will be displayed inside the _bod
 #### inc
 Folder located inside the _views_ folder. It contains the following files:
 
-* __head.php__: HTML head. Contains the title, meta tags and links to the CSS files.
+* __head.php__: HTML _head_. Contains the title, meta tags and links to the CSS files.
 * __header.php__: Contains the header and navigation bar.
 * __foot.php__: Contains the links to the Javascript files.
 
@@ -147,7 +149,7 @@ Located inside the _helpers_ folder at the _app_ root, these files can contain c
 FELVET offers a free PDF in exchange of the user's data. This is all taken care of by the 'Descargar' controller. When a user provides a name and an email address, a download link will be sent to them via email. This link will point to a controller that will check if the user has been added to the 'download' list in Active Campaign (by using the API lib), take the PDF from a secret location, change the name of the file (which is initially transcoded) and force the browser to downlaoad the file with its new name.
 
 ```php
-private    $secretFilePath = APPROOT . '/hbskjhLwDgffW/FS9mmewA.pdf';
+private    $secretFilePath = APPROOT . '/ffMgfjslLY6rLwDgnTW/fjslk.pdf';
 protected  $publicFilePath = 'FELVET_GUIA-DE-COMPORTAMIENTO.pdf';
 
 header('Content-type: application/pdf');
@@ -159,5 +161,5 @@ readfile($this->secretFilePath);
 ### Cookies & Sessions
 This website uses the following cookies and sessions:
 
-* __downloadActive__: Session that makes the file available to download after the user inputs his or her data until the browser is closed.
+* __downloadActive__: Session that makes the PDF file available to download after the user inputs his or her data until the browser is closed.
 * __cookiesAccepted__: Cookie that checks if the user has accepted the company's cookie policy. Gets destroyed after 30 days.
